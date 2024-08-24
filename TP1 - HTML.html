@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp1 HTML Programacion</title>
+</head>
+
+<body id="inicio">
+    <header style="position:sticky; top: 0; background-color: #f2f2f2;">
+        <nav style="display: flex; flex-direction: row;">
+            <h1>Elementos HTML</h1>
+            <ul style="display: flex; flex-direction: row; ">
+                <li><a href="#text">Encabezados y Propiedades de Texto</a></li>
+                <li><a href="#divs">Divisiones y Agrupacion de Contenido</a></li>
+                <li><a href="#listas">Enlaces y Listas</a></li>
+                <li><a href="#multi">Elementos Multimedia</a></li>
+                <li><a href="#tablas">Tablas</a></li>
+                <li><a href="#forms">Formularios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="text">
+        <h2>2. Encabezados y Propiedades de Texto</h2>
+        <h1>Titulo H1</h1>
+        <h2>Titulo H2</h2>
+        <h3>Titulo H3</h3>
+        <h4>Titulo H4</h4>
+        <h5>Titulo H5</h5>
+        <h6>Titulo H6</h6>
+        <p><b>Este es un texto en negrita</b></p>
+        <p><i>Este es un texto en cursiva</i></p>
+        <p><u>Este es un texto subrayado</u></p>
+    </section>
+
+    <section id="divs">
+        <h2>3. Divisiones y Agrupacion de Contenido</h2>
+        <div>
+            <h3>Sección 1</h3>
+            <p>Contenido de la primera sección agrupada en un div</p>
+        </div>
+        <div>
+            <h3>Sección 2</h3>
+            <p>Contenido de la segunda sección agrupada en un div</p>
+        </div>
+    </section>
+
+    <section id="listas">
+        <h2>4. Enlaces y Listas</h2>
+        <p>Mediante este <a href="https://www.google.com">Enlace a Google</a> puedes buscar información</p>
+        <div>
+            <h4>Enlaces Internos:</h4>
+            <ul>
+                <li><a href="#listas">Ir a Titulo</a></li>
+                <li><a href="#multi">Ir a Multimedia</a></li>
+                <li><a href="#inicio">Ir a Inicio</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Lista desordenada:</h4>
+            <ul>
+                <li>Primer Item de una lista desordenada</li>
+                <li>Segundo Item de una lista desordenada</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Lista ordenada:</h4>
+            <ol>
+                <li>Primer Item de una lista ordenada</li>
+                <li>Segundo Item de una lista ordenada</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="multi">
+        <h2>5. Elementos Multimedia</h2>
+        <div>
+            <h4>Imagen:</h4>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt="Logo de Google" width="272" height="92">
+            <h4>Video (Con controles): </h4>
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Mensaje de error en caso que el elemento no sea soportado
+            </video>
+            <h4>Audio (Con controles): </h4>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Mensaje de error en caso que el elemento no sea soportado
+            </audio>
+        </div>
+    </section>
+
+    <section id="tablas">
+        <h2>6. Tablas</h2>
+        <table border="1">
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </tr>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+            </tr>
+            <tr>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="forms">
+        <h2>7. Formularios</h2>
+        <form action="submit.php" method="post">
+            <div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje"></textarea><br>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>Este es el pie de página</p>
+        <p>Entrega Lautaro Gonzalez Programación 3</p>
+    </footer>
+</body>
+
+</html>
